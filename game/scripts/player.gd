@@ -6,12 +6,20 @@ const MOVE_SPEED : int = 400
 const MOVE_ANGLE : float = 23.0
 const FUEL_MAX : float = 500.0
 
+onready var shape = $body_shape
+onready var top_propeller = $top_prop
+onready var back_propeller = $back_prop
+
 # State variables
 var velocity : Vector2 = Vector2()
 var fuel : float = FUEL_MAX
 
 # Signals
 signal remaining_fuel
+
+func _ready():
+	top_propeller.connect("body_entered", self, "_on_propeller_collide")
+	back_propeller.connect("body_entered", self, "_on_propeller_collide")
 
 func _physics_process(delta):
 	
@@ -60,3 +68,7 @@ func _physics_process(delta):
 		fuel = 0
 	
 	emit_signal("remaining_fuel", fuel)
+
+func _on_propeller_collide(body):
+	if body != self:
+		print("A propeller collided with something!")
