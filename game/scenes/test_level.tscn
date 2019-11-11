@@ -8,14 +8,12 @@
 [node name="test_level" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 530.584, 348.195 )
-scale = Vector2( 0.2, 0.2 )
+[node name="ui" type="CanvasLayer" parent="."]
 
-[node name="gauge" parent="." instance=ExtResource( 4 )]
+[node name="gauge" parent="ui" instance=ExtResource( 4 )]
 margin_left = 47.6131
 margin_top = 46.2527
-margin_right = 47.6131
+margin_right = 47.613
 margin_bottom = 46.2527
 rect_scale = Vector2( 0.2, 0.2 )
 
@@ -42,3 +40,7 @@ scale = Vector2( 0.3, 0.3 )
 [node name="island06" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1699.51, 588.467 )
 scale = Vector2( 0.3, 0.3 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1011.74, 366.495 )
+scale = Vector2( 0.2, 0.2 )
