@@ -67,7 +67,7 @@ func _physics_process(delta):
 	elif fuel < 0:
 		fuel = 0
 	
-	emit_signal("remaining_fuel", fuel)
+	emit_signal("remaining_fuel", fuel / FUEL_MAX)
 
 func _on_propeller_collide(body):
 	if body != self:

@@ -21,8 +21,16 @@ _global_script_class_icons={
 [application]
 
 config/name="Evac Havoc 2: Floating Boogaloo"
-run/main_scene="res://scenes/player.tscn"
+run/main_scene="res://scenes/test_level.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/resizable=false
+window/size/borderless=true
+window/size/fullscreen=true
 
 [input]
 

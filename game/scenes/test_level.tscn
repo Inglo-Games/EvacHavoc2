@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/test_level.gd" type="Script" id=2]
 [ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/gauge.tscn" type="PackedScene" id=4]
 
 [node name="test_level" type="Node2D"]
 script = ExtResource( 2 )
@@ -11,13 +12,12 @@ script = ExtResource( 2 )
 position = Vector2( 530.584, 348.195 )
 scale = Vector2( 0.2, 0.2 )
 
-[node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "REMAINING FUEL: "
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="gauge" parent="." instance=ExtResource( 4 )]
+margin_left = 47.6131
+margin_top = 46.2527
+margin_right = 47.6131
+margin_bottom = 46.2527
+rect_scale = Vector2( 0.2, 0.2 )
 
 [node name="island01" parent="." instance=ExtResource( 3 )]
 position = Vector2( 245.384, 211.303 )

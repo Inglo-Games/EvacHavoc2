@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="400"
+   viewBox="0 0 105.8333 105.8333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="fuel_gage.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="269.2482"
+     inkscape:cy="219.7806"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer4"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     gridtolerance="10"
+     objecttolerance="5">
+    <inkscape:grid
+       type="xygrid"
+       id="grid945"
+       spacingx="52.91665"
+       spacingy="52.91665"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="gauge"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-191.1667)">
+    <circle
+       style="opacity:1;fill:#8c8c8c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.0861841;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:8.8157482;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path815"
+       cx="52.91667"
+       cy="244.0834"
+       r="51.59375" />
+    <path
+       style="opacity:1;fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.0583333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:8.8157482;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path982"
+       sodipodi:type="arc"
+       sodipodi:cx="90.26418"
+       sodipodi:cy="-230.9582"
+       sodipodi:rx="45.23793"
+       sodipodi:ry="44.97917"
+       sodipodi:start="0"
+       sodipodi:end="4.319486"
+       sodipodi:open="true"
+       d="m 135.5021,-230.9582 a 45.23793,44.97917 0 0 1 -39.33013,44.594 45.23793,44.97917 0 0 1 -49.60268,-32.9466 45.23793,44.97917 0 0 1 26.37457,-53.1992"
+       transform="rotate(146.3764)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.6879167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 15.04894,267.5453 75.13281,-0.048 z"
+       id="path984"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="tmp_lines"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="lines" />
+</svg>
