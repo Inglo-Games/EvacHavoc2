@@ -9,6 +9,7 @@ const FUEL_MAX : float = 500.0
 onready var shape = $body_shape
 onready var top_propeller = $top_prop
 onready var back_propeller = $back_prop
+onready var tween = $Tween
 
 # State variables
 var velocity : Vector2 = Vector2()
@@ -71,4 +72,8 @@ func _physics_process(delta):
 
 func _on_propeller_collide(body):
 	if body != self:
-		print("A propeller collided with something!")
+		modulate = Color(0.7, 0.0, 0.0, 0.6)
+		tween.interpolate_property(self, "modulate:a", 1, 0, 0.6, Tween.TRANS_CUBIC, Tween.EASE_OUT)
+		tween.start()
+		yield(tween, "tween_all_completed")
+		get_tree().quit()
