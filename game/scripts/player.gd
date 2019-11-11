@@ -40,20 +40,23 @@ func _physics_process(delta):
 	rotation = lerp_angle(rotation, deg2rad(direction.x * MOVE_ANGLE), 0.04)
 	var collision_info = move_and_collide(velocity * delta)
 	
-	if is_on_floor():
-		# If just sitting on ground...
-		fuel -= 0.03
-	elif direction.y > 0:
-		# If moving down (and maybe sideways)...
-		fuel -= 0.04
-	elif direction.y <= 1:
-		# If moving up (and maybe sideways)...
-		fuel -= 0.09
-	elif direction.x == 1 or direction.x == -1:
-		# If moving sideways without up or down...
-		fuel -= 0.07
-	else:
-		# If just hovering...
-		fuel -= 0.05
+	if fuel > 0:
+		if is_on_floor():
+			# If just sitting on ground...
+			fuel -= 0.03
+		elif direction.y > 0:
+			# If moving down (and maybe sideways)...
+			fuel -= 0.04
+		elif direction.y <= 1:
+			# If moving up (and maybe sideways)...
+			fuel -= 0.09
+		elif direction.x == 1 or direction.x == -1:
+			# If moving sideways without up or down...
+			fuel -= 0.07
+		else:
+			# If just hovering...
+			fuel -= 0.05
+	elif fuel < 0:
+		fuel = 0
 	
 	emit_signal("remaining_fuel", fuel)
