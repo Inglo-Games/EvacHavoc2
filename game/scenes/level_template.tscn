@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/gauge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/level_template.gd" type="Script" id=3]
 [ext_resource path="res://scenes/dialog.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/sprites/bg_sky.svg" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/mountains01.svg" type="Texture" id=6]
 
 [sub_resource type="LineShape2D" id=2]
 
@@ -14,6 +16,23 @@ extents = Vector2( 160, 30 )
 script = ExtResource( 3 )
 
 [node name="bg" type="ParallaxBackground" parent="."]
+
+[node name="sky" type="ParallaxLayer" parent="bg"]
+motion_mirroring = Vector2( 1920, 1080 )
+
+[node name="Sprite" type="Sprite" parent="bg/sky"]
+texture = ExtResource( 5 )
+
+[node name="mtn01" type="ParallaxLayer" parent="bg"]
+motion_scale = Vector2( 0.2, 0.2 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="bg/mtn01"]
+texture = ExtResource( 6 )
+
+[node name="mtn02" type="ParallaxLayer" parent="bg"]
+
+[node name="Sprite" type="Sprite" parent="bg/mtn02"]
 
 [node name="ui" type="CanvasLayer" parent="."]
 layer = 3
