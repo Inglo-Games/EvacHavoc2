@@ -3,6 +3,7 @@ extends Node2D
 var PausePopup = preload("res://scripts/pause_popup.gd")
 
 onready var player = $player
+onready var helipad = $helipad
 onready var fuel_gauge = $ui/gauge
 
 var dialogue_text = []
@@ -10,7 +11,8 @@ var dialogue_text = []
 func _ready():
 	player.connect("remaining_fuel", fuel_gauge, "_on_fuel_update")
 	for person in get_tree().get_nodes_in_group("people"):
-		person.connect("person_saved", self, "_on_person_saved")
+		#person.connect("person_saved", self, "_on_person_saved")
+		pass
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -31,3 +33,7 @@ func _pause_game():
 
 func _on_quit_game():
 	get_tree().quit()
+
+func _on_helipad_land(body):
+	if body is Player and len(get_tree().get_nodes_in_group("people")) == 0:
+		_on_quit_game()
