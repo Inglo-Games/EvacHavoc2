@@ -72,6 +72,8 @@ func _physics_process(delta):
 
 func _on_propeller_collide(body):
 	if body != self:
+		$heli_audio.stop()
+		$expl_audio.play()
 		modulate = Color(0.7, 0.0, 0.0, 0.6)
 		tween.interpolate_property(self, "modulate:a", 1, 0, 0.6, Tween.TRANS_CUBIC, Tween.EASE_OUT)
 		tween.start()

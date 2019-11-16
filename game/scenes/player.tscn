@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/sprites/helicopter.svg" type="Texture" id=1]
 [ext_resource path="res://scripts/player.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/prop_frames.tres" type="SpriteFrames" id=3]
+[ext_resource path="res://assets/sfx/explosion.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sfx/heli.wav" type="AudioStream" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 30.0
@@ -31,7 +33,7 @@ shape = SubResource( 1 )
 [node name="sprite" type="AnimatedSprite" parent="top_prop"]
 scale = Vector2( 1.16, 0.09 )
 frames = ExtResource( 3 )
-frame = 2
+frame = 4
 playing = true
 
 [node name="back_prop" type="Area2D" parent="."]
@@ -43,10 +45,17 @@ shape = SubResource( 2 )
 [node name="sprite" type="AnimatedSprite" parent="back_prop"]
 scale = Vector2( 0.17, 0.17 )
 frames = ExtResource( 3 )
-frame = 4
+frame = 2
 playing = true
 
 [node name="camera" type="Camera2D" parent="."]
 current = true
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="heli_audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="expl_audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
