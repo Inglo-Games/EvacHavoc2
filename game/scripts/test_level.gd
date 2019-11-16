@@ -21,8 +21,9 @@ func _on_person_saved():
 		get_tree().quit()
 
 func _pause_game():
-	var pause_menu = PausePopup.instance()
-	add_child(pause_menu)
-	pause_menu.popup_centered()
-	pause_menu.connect("quit_game", self, "clear_ui_and_return")
+	$ui/pause_menu.popup_centered()
+	$ui/pause_menu.connect("quit_game", self, "_on_quit_game")
 	get_tree().set_pause(true)
+
+func _on_quit_game():
+	get_tree().quit()
