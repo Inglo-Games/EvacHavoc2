@@ -10,19 +10,11 @@ var dialogue_text = []
 
 func _ready():
 	player.connect("remaining_fuel", fuel_gauge, "_on_fuel_update")
-	for person in get_tree().get_nodes_in_group("people"):
-		#person.connect("person_saved", self, "_on_person_saved")
-		pass
+	helipad.connect("body_entered", self, "_on_helipad_land")
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		_pause_game()
-
-func _on_person_saved():
-	var people = get_tree().get_nodes_in_group("people")
-	if len(people) == 1:
-		print("You win!")
-		get_tree().quit()
 
 func _pause_game():
 	var pause_menu = PausePopup.instance()
@@ -36,4 +28,6 @@ func _on_quit_game():
 
 func _on_helipad_land(body):
 	if body is Player and len(get_tree().get_nodes_in_group("people")) == 0:
+		$applause.play()
+		yield($applause, "finished")
 		_on_quit_game()
