@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="fuel_gage.svg">
+   sodipodi:docname="fuel_gauge.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="269.2482"
-     inkscape:cy="219.7806"
+     inkscape:cx="182.9353"
+     inkscape:cy="194.9776"
      inkscape:document-units="mm"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -54,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -93,9 +93,69 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="tmp_lines"
-     style="display:inline" />
+     style="display:none">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2645833px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 97.72276,50.50972 52.91663,76.37856 85.53287,19.88558"
+       id="path822"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2645833px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.91663,5.688541 V 76.37856 L 20.10261,19.54301"
+       id="path824"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2645833px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.91663,76.37856 7.33105,50.05972"
+       id="path826"
+       inkscape:connector-curvature="0" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="lines" />
+     inkscape:label="lines">
+    <path
+       style="fill:none;stroke:#ea0000;stroke-width:1.4229292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.33105,50.05972 23.0548,59.13784"
+       id="path828"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.8325247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 20.2349,19.77215 32.62981,41.24078"
+       id="path830"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.1289687;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 52.91663,5.688541 V 34.45899"
+       id="path832"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.8633777;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 85.60923,19.75329 73.00814,41.57905"
+       id="path834"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.3853233;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 98.20883,50.22909 81.98286,59.59714"
+       id="path836"
+       inkscape:connector-curvature="0" />
+    <g
+       aria-label="E"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833321px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ea0000;fill-opacity:1;stroke:none;stroke-width:0.2645833;stroke-opacity:1"
+       id="text840">
+      <path
+         d="m 14.79703,60.94408 h 4.87825 v 0.8785 h -3.83439 v 2.2841 h 3.67419 v 0.8785 h -3.67419 v 2.79569 h 3.92741 v 0.8785 h -4.97127 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ea0000;fill-opacity:1;stroke:none;stroke-width:0.2645833;stroke-opacity:1"
+         id="path867" />
+    </g>
+    <g
+       aria-label="F"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.583333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2645833;stroke-opacity:1"
+       id="text840-3">
+      <path
+         d="m 85.62061,61.62674 h 4.43384 v 0.8785 H 86.66448 V 64.779 h 3.05924 v 0.8785 h -3.05924 v 3.68453 h -1.04387 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2645833;stroke-opacity:1"
+         id="path864" />
+    </g>
+  </g>
 </svg>

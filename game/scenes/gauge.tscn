@@ -25,3 +25,4 @@ offset = Vector2( 0.0403085, -69.1658 )
 
 [node name="warning_audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -10.0
