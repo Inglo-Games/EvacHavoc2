@@ -55,6 +55,7 @@ current = true
 
 [node name="heli_audio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 5 )
+volume_db = -20.0
 autoplay = true
 
 [node name="expl_audio" type="AudioStreamPlayer2D" parent="."]
