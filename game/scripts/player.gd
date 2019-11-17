@@ -66,6 +66,9 @@ func _physics_process(delta):
 			# If just hovering...
 			fuel -= 0.05
 	elif fuel < 0:
+		$top_prop/sprite.stop()
+		$back_prop/sprite.stop()
+		$heli_audio.stop()
 		fuel = 0
 	
 	emit_signal("remaining_fuel", fuel / FUEL_MAX)
