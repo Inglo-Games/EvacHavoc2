@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/gauge.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/sfx/applause.wav" type="AudioStream" id=5]
 [ext_resource path="res://assets/sprites/mountains01.svg" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/helipad.svg" type="Texture" id=7]
+[ext_resource path="res://assets/fonts/dialog_font.tres" type="DynamicFont" id=8]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 5000, 10 )
@@ -57,6 +58,18 @@ margin_top = 50.0
 margin_right = -1870.0
 margin_bottom = -1030.0
 rect_scale = Vector2( 0.2, 0.2 )
+
+[node name="remain_label" type="Label" parent="ui"]
+margin_left = 150.0
+margin_top = 40.0
+margin_right = 310.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "X people left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="dialog" parent="ui" instance=ExtResource( 4 )]
 visible = false
