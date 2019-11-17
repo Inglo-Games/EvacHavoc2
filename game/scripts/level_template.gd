@@ -13,6 +13,7 @@ func _ready():
 	
 	_on_person_saved()
 	if dialogue_text != []:
+		get_tree().paused = true
 		$ui/dialog.set_lines(dialogue_text)
 		$ui/dialog.visible = true
 

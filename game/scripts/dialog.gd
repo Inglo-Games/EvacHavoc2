@@ -16,6 +16,7 @@ func _on_dialog_clicked(ev):
 			current_line += 1
 			label.text = lines[current_line]
 		else:
+			get_tree().paused = false
 			queue_free()
 
 func set_lines(string_array):
