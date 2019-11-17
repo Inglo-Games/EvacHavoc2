@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Evac Havoc 2: Floating Boogaloo"
-run/main_scene="res://scenes/level_template.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -31,6 +31,7 @@ bgm="*res://scripts/bgm.gd"
 [display]
 
 window/size/width=800
+window/stretch/mode="viewport"
 
 [input]
 
