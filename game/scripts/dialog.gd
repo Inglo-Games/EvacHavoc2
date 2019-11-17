@@ -11,6 +11,7 @@ func _ready():
 
 func _on_dialog_clicked(ev):
 	if ev is InputEventMouseButton and not ev.pressed:
+		print("Dialog clicked...")
 		if current_line < len(lines) - 1:
 			current_line += 1
 			label.text = lines[current_line]

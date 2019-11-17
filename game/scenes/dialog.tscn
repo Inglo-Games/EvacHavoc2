@@ -1,26 +1,37 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/dialog.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/dialog_font.tres" type="DynamicFont" id=2]
 
 [node name="dialog" type="Control"]
+anchor_left = 0.2
+anchor_top = 0.7
+anchor_right = 0.8
+anchor_bottom = 0.9
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="bg" type="ColorRect" parent="."]
-margin_right = 800.0
-margin_bottom = 120.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.862745, 0.32549, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="label" type="Label" parent="."]
-margin_right = 800.0
-margin_bottom = 120.0
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.184314, 0.184314, 0.184314, 1 )
 text = "Dialogue goes here"
 align = 1
 valign = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

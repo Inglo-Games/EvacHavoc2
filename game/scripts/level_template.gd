@@ -2,12 +2,16 @@ extends Node2D
 
 var PausePopup = preload("res://scripts/pause_popup.gd")
 
-export var dialogue_text = [""]
+export var dialogue_text = []
 export var next_scene = "res://scenes/menu.tscn"
 
 func _ready():
 	$player.connect("remaining_fuel", $ui/gauge, "_on_fuel_update")
 	$helipad.connect("body_entered", self, "_on_helipad_land")
+	
+	if dialogue_text != []:
+		$ui/dialog.set_lines(dialogue_text)
+		$ui/dialog.visible = true
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
