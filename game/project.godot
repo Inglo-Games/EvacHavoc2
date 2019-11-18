@@ -31,7 +31,9 @@ bgm="*res://scripts/bgm.gd"
 
 [display]
 
-window/size/width=800
+window/size/width=1280
+window/size/height=720
+window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
 
 [input]
