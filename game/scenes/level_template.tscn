@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/gauge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/level_template.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/mountains02.svg" type="Texture" id=4]
 [ext_resource path="res://assets/sfx/applause.wav" type="AudioStream" id=5]
 [ext_resource path="res://assets/sprites/mountains01.svg" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/helipad.svg" type="Texture" id=7]
@@ -31,7 +32,7 @@ __meta__ = {
 }
 
 [node name="mtn01" type="ParallaxLayer" parent="bg"]
-motion_scale = Vector2( 0.4, 1 )
+motion_scale = Vector2( 0.1, 1 )
 motion_mirroring = Vector2( 1920, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/mtn01"]
@@ -40,8 +41,13 @@ centered = false
 offset = Vector2( 0, -1080 )
 
 [node name="mtn02" type="ParallaxLayer" parent="bg"]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 1920, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/mtn02"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( 0, -1080 )
 
 [node name="border" type="Line2D" parent="."]
 points = PoolVector2Array( 0, 0, 0, -2000, 4000, -2000, 4000, 0 )
