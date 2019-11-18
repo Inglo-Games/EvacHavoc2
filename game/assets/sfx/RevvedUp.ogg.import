@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RevvedUp.ogg-e1a266b443c22e5c9f77c0d8315ed083.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/RevvedUp.ogg"
+dest_files=[ "res://.import/RevvedUp.ogg-e1a266b443c22e5c9f77c0d8315ed083.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=17.0
