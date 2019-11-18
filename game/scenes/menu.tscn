@@ -1,6 +1,22 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/SpeedeasySpeedy.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/Speedeasy.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/sprites/mountains01.svg" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/dialog_font.tres" type="DynamicFont" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
 
 [node name="menu" type="Control"]
 anchor_right = 1.0
@@ -10,16 +26,44 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="title" type="Label" parent="."]
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_right = 40.0
-margin_bottom = 14.0
+margin_bottom = 40.0
+color = Color( 0, 0.843137, 0.929412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg_mtns" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -30, 120 )
+
+[node name="title" type="Label" parent="."]
+anchor_top = 0.05
+anchor_right = 1.0
+anchor_bottom = 0.15
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.933333, 0, 0, 1 )
 text = "Evac Havoc 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="subtitle" type="Label" parent="."]
-margin_top = 18.0
-margin_right = 113.0
-margin_bottom = 32.0
+anchor_top = 0.16
+anchor_right = 1.0
+anchor_bottom = 0.2
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.933333, 0, 0, 1 )
 text = "Floating Boogaloo"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -37,20 +81,23 @@ __meta__ = {
 }
 
 [node name="start_btn" type="Button" parent="vbox"]
-margin_right = 80.0
-margin_bottom = 20.0
+margin_right = 107.0
+margin_bottom = 16.0
+custom_fonts/font = ExtResource( 5 )
 text = "Play Game"
 
 [node name="tut_btn" type="Button" parent="vbox"]
-margin_top = 38.0
-margin_right = 80.0
-margin_bottom = 58.0
+margin_top = 34.0
+margin_right = 107.0
+margin_bottom = 50.0
+custom_fonts/font = ExtResource( 5 )
 text = "Tutorial"
 
 [node name="quit_btn" type="Button" parent="vbox"]
-margin_top = 76.0
-margin_right = 80.0
-margin_bottom = 96.0
+margin_top = 68.0
+margin_right = 107.0
+margin_bottom = 84.0
+custom_fonts/font = ExtResource( 5 )
 text = "Exit Game"
 [connection signal="button_up" from="vbox/start_btn" to="." method="_on_start_btn_up"]
 [connection signal="button_up" from="vbox/tut_btn" to="." method="_on_tut_btn_up"]
