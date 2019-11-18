@@ -70,6 +70,8 @@ func _physics_process(delta):
 		$back_prop/sprite.stop()
 		$heli_audio.stop()
 		fuel = 0
+		yield(get_tree().create_timer(5), "timeout")
+		get_tree().change_scene("res://scenes/menu.tscn")
 	
 	emit_signal("remaining_fuel", fuel / FUEL_MAX)
 
@@ -81,4 +83,4 @@ func _on_propeller_collide(body):
 		tween.interpolate_property(self, "modulate:a", 1, 0, 0.6, Tween.TRANS_CUBIC, Tween.EASE_OUT)
 		tween.start()
 		yield(tween, "tween_all_completed")
-		get_tree().quit()
+		get_tree().change_scene("res://scenes/menu.tscn")
