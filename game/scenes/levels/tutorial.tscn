@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/person.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/level_template.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=3]
+
+[node name="level" index="0" instance=ExtResource( 2 )]
+dialogue_text = [ "Hello Johnny, this is your President speaking.", "I had heard about your efforts in the volcanic eruption last year so you're just the person we need.", "You see, the Rapture has begun!", "You need to get up there and rescue people from the floating islands before they're carried away or fall apart.", "The red lines mark your current area of operations.  Make sure you watch your fuel as well.", "Now get out there and make your country proud!" ]
+
+[node name="island" parent="islands" index="0" instance=ExtResource( 3 )]
+position = Vector2( 1435.12, -304.576 )
+
+[node name="island2" parent="islands" index="1" instance=ExtResource( 3 )]
+position = Vector2( 3190.3, -1440.28 )
+
+[node name="island3" parent="islands" index="2" instance=ExtResource( 3 )]
+position = Vector2( 3329.68, -25.8116 )
+
+[node name="island4" parent="islands" index="3" instance=ExtResource( 3 )]
+position = Vector2( 1192.49, -1151.19 )
+
+[node name="person" parent="people" index="0" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1171.84, -1347.36 )
+
+[node name="person2" parent="people" index="1" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 3066.4, -211.654 )
