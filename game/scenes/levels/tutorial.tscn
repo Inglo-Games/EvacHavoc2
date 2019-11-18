@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=3]
 
 [node name="level" index="0" instance=ExtResource( 2 )]
-dialogue_text = [ "Hello Johnny, this is your President speaking.", "I had heard about your efforts in the volcanic eruption last year so you're just the person we need.", "You see, the Rapture has begun!", "You need to get up there and rescue people from the floating islands before they're carried away or fall apart.", "The red lines mark your current area of operations.  Make sure you watch your fuel as well.", "Now get out there and make your country proud!" ]
+dialogue_text = [ "Hello Johnny, this is your President speaking.", "I had heard about your efforts in the volcanic eruption last year so you're just the person we need.", "You see, the Rapture has begun!", "You need to get up there and rescue people from the floating islands before they're carried away or fall apart.", "Touch a person to pick them up, then return to the landing pad when you're done.", "The red lines mark your current area of operations.  Make sure you watch your fuel as well.", "Now get out there and make your country proud!" ]
 
 [node name="island" parent="islands" index="0" instance=ExtResource( 3 )]
 position = Vector2( 1435.12, -304.576 )
