@@ -30,6 +30,9 @@ position = Vector2( 2099.88, -1027.48 )
 [node name="island8" parent="islands" index="7" instance=ExtResource( 2 )]
 position = Vector2( 502.281, -1665 )
 
+[node name="island9" parent="islands" index="8" instance=ExtResource( 2 )]
+position = Vector2( -370.517, -245.756 )
+
 [node name="person" parent="people" index="0" groups=[
 "people",
 ] instance=ExtResource( 1 )]
