@@ -7,5 +7,5 @@ func _ready():
 
 func _on_body_entered(body):
 	if body is Player:
-		queue_free()
 		emit_signal("person_saved")
+		queue_free()

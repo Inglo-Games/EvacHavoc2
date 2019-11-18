@@ -8,5 +8,4 @@ func _on_resume_pressed():
 
 func _on_quit_pressed():
 	get_tree().set_pause(false)
-	emit_signal("quit_game")
-	queue_free()
+	get_tree().change_scene("res://scenes/menu.tscn")
