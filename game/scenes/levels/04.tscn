@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/person.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/level_template.tscn" type="PackedScene" id=3]
+
+[node name="level" index="0" instance=ExtResource( 3 )]
+
+[node name="island" parent="islands" index="0" instance=ExtResource( 2 )]
+position = Vector2( 544.023, -477.237 )
+
+[node name="island2" parent="islands" index="1" instance=ExtResource( 2 )]
+position = Vector2( 1219.49, -71.1965 )
+
+[node name="island3" parent="islands" index="2" instance=ExtResource( 2 )]
+position = Vector2( 2365.51, -515.185 )
+
+[node name="island4" parent="islands" index="3" instance=ExtResource( 2 )]
+position = Vector2( 1325.75, -1410.75 )
+
+[node name="island5" parent="islands" index="4" instance=ExtResource( 2 )]
+position = Vector2( 3374.92, -1091.99 )
+
+[node name="island6" parent="islands" index="5" instance=ExtResource( 2 )]
+position = Vector2( 2578.02, -1623.26 )
+
+[node name="island7" parent="islands" index="6" instance=ExtResource( 2 )]
+position = Vector2( 2099.88, -1027.48 )
+
+[node name="island8" parent="islands" index="7" instance=ExtResource( 2 )]
+position = Vector2( 502.281, -1665 )
+
+[node name="person" parent="people" index="0" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 330.145, -664.085 )
+
+[node name="person2" parent="people" index="1" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1552.06, -258.044 )
+
+[node name="person3" parent="people" index="2" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 2246.5, -698.238 )
+
+[node name="person4" parent="people" index="3" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1487.55, -1605.19 )
+
+[node name="person5" parent="people" index="4" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 3119.3, -1278.84 )
+
+[node name="person6" parent="people" index="5" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 3346.99, -1278.84 )
+
+[node name="person7" parent="people" index="6" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1734.21, -1214.33 )
+
+[node name="person8" parent="people" index="7" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 163.174, -1855.64 )
+
+[node name="person9" parent="people" index="8" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 2227.53, -1810.11 )
+
+[node name="person10" parent="people" index="9" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 2538.7, -1810.11 )
+
+[node name="person11" parent="people" index="10" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1051.15, -258.044 )

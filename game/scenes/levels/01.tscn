@@ -4,16 +4,17 @@
 [ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/person.tscn" type="PackedScene" id=3]
 
-[node name="level" index="0" instance=ExtResource( 1 )]
+[node name="level" instance=ExtResource( 1 )]
+next_scene = "res://scenes/levels/02.tscn"
 
 [node name="island" parent="islands" index="0" instance=ExtResource( 2 )]
-position = Vector2( 3332.8, -1420.76 )
+position = Vector2( 3675.28, -814.57 )
 
 [node name="island2" parent="islands" index="1" instance=ExtResource( 2 )]
-position = Vector2( 1951.88, -1186.18 )
+position = Vector2( 2335.46, -836.849 )
 
 [node name="island3" parent="islands" index="2" instance=ExtResource( 2 )]
-position = Vector2( 699.313, -1447.31 )
+position = Vector2( 654.791, -1272.65 )
 
 [node name="island4" parent="islands" index="3" instance=ExtResource( 2 )]
 position = Vector2( 1221.59, -371.787 )
@@ -39,14 +40,14 @@ position = Vector2( 3753.03, -212.507 )
 [node name="person4" parent="people" index="3" groups=[
 "people",
 ] instance=ExtResource( 3 )]
-position = Vector2( 3331.81, -1605.19 )
+position = Vector2( 3499.62, -995.577 )
 
 [node name="person5" parent="people" index="4" groups=[
 "people",
 ] instance=ExtResource( 3 )]
-position = Vector2( 2037.79, -1369.91 )
+position = Vector2( 2530.96, -1020.58 )
 
 [node name="person6" parent="people" index="5" groups=[
 "people",
 ] instance=ExtResource( 3 )]
-position = Vector2( 1878.41, -1373.71 )
+position = Vector2( 2094.17, -1020.95 )

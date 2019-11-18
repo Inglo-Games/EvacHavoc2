@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/person.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/island01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/level_template.tscn" type="PackedScene" id=3]
+
+[node name="level" instance=ExtResource( 3 )]
+next_scene = "res://scenes/levels/03.tscn"
+
+[node name="island" parent="islands" index="0" instance=ExtResource( 2 )]
+position = Vector2( 941.115, -293.516 )
+
+[node name="island2" parent="islands" index="1" instance=ExtResource( 2 )]
+position = Vector2( 1612.01, -1677.23 )
+
+[node name="island3" parent="islands" index="2" instance=ExtResource( 2 )]
+position = Vector2( 3433.67, -1220.65 )
+
+[node name="island4" parent="islands" index="3" instance=ExtResource( 2 )]
+position = Vector2( 2804.71, -470.557 )
+
+[node name="island5" parent="islands" index="4" instance=ExtResource( 2 )]
+position = Vector2( 521.806, -1304.52 )
+
+[node name="person" parent="people" index="0" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 675.553, -470.557 )
+
+[node name="person2" parent="people" index="1" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1271.9, -475.216 )
+
+[node name="person3" parent="people" index="2" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 228.29, -1486.22 )
+
+[node name="person4" parent="people" index="3" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1439.63, -1863.59 )
+
+[node name="person5" parent="people" index="4" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 1817, -1863.59 )
+
+[node name="person6" parent="people" index="5" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 3745.82, -1407.01 )
+
+[node name="person7" parent="people" index="6" groups=[
+"people",
+] instance=ExtResource( 1 )]
+position = Vector2( 2692.89, -661.576 )
