@@ -6,13 +6,17 @@ var DialogWindow = preload("res://scenes/dialog.tscn")
 export var dialogue_text = []
 export var next_scene = "res://scenes/menu.tscn"
 
+var remaining_people
+
 func _ready():
 	$player.connect("remaining_fuel", $ui/gauge, "_on_fuel_update")
 	$helipad.connect("body_entered", self, "_on_helipad_land")
 	for person in get_tree().get_nodes_in_group("people"):
 		person.connect("person_saved", self, "_on_person_saved")
 	
-	_on_person_saved()
+	remaining_people = len(get_tree().get_nodes_in_group("people"))
+	$ui/remain_label.text = "%d people left" % remaining_people
+	
 	if dialogue_text != []:
 		var dialog = DialogWindow.instance()
 		$ui.add_child(dialog)
@@ -36,8 +40,8 @@ func _on_quit_game():
 	get_tree().quit()
 
 func _on_person_saved():
-	var rem = len(get_tree().get_nodes_in_group("people"))
-	$ui/remain_label.text = "%d people left" % rem
+	remaining_people -= 1
+	$ui/remain_label.text = "%d people left" % remaining_people
 
 func _on_helipad_land(body):
 	if body is Player and len(get_tree().get_nodes_in_group("people")) == 0:
