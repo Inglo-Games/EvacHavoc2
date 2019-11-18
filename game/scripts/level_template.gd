@@ -17,6 +17,7 @@ func _ready():
 		var dialog = DialogWindow.instance()
 		$ui.add_child(dialog)
 		dialog.set_lines(dialogue_text)
+		dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 		get_tree().set_pause(true)
 
 func _process(delta):

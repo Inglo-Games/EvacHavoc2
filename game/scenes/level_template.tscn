@@ -1,15 +1,14 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/gauge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/level_template.gd" type="Script" id=3]
-[ext_resource path="res://scenes/dialog.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/sfx/applause.wav" type="AudioStream" id=5]
 [ext_resource path="res://assets/sprites/mountains01.svg" type="Texture" id=6]
 [ext_resource path="res://assets/sprites/helipad.svg" type="Texture" id=7]
 [ext_resource path="res://assets/fonts/dialog_font.tres" type="DynamicFont" id=8]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5000, 10 )
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -52,11 +51,6 @@ default_color = Color( 0.784314, 0, 0, 1 )
 [node name="ui" type="CanvasLayer" parent="."]
 layer = 3
 
-[node name="dialog" parent="ui" instance=ExtResource( 4 )]
-pause_mode = 2
-visible = false
-margin_bottom = 1.0
-
 [node name="gauge" parent="ui" instance=ExtResource( 2 )]
 margin_left = 50.0
 margin_top = 50.0
@@ -83,7 +77,7 @@ __meta__ = {
 [node name="ground" type="StaticBody2D" parent="."]
 
 [node name="shape" type="CollisionShape2D" parent="ground"]
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="sprite" type="Sprite" parent="ground"]
 
