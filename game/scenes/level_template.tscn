@@ -22,18 +22,21 @@ script = ExtResource( 3 )
 [node name="bg" type="ParallaxBackground" parent="."]
 
 [node name="sky" type="ParallaxLayer" parent="bg"]
-motion_scale = Vector2( 0, 1 )
-motion_mirroring = Vector2( 1920, 0 )
+motion_mirroring = Vector2( 1920, 1080 )
 
 [node name="ColorRect" type="ColorRect" parent="bg/sky"]
-margin_top = -1080.0
 margin_right = 1920.0
+margin_bottom = 1080.0
 color = Color( 0, 0.843137, 0.929412, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="bg/sky"]
+[node name="cloud" type="ParallaxLayer" parent="bg"]
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="bg/cloud"]
 texture = ExtResource( 9 )
 centered = false
 offset = Vector2( 0, -1080 )
